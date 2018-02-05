@@ -10,7 +10,9 @@
 <ion-content padding>
   <button ion-button (click)="onClickUser('Shadab')">User Shadab</button>
   <hr>
-  <button ion-button (click)="onClickUser('Bob')">User Bob</button>
+  <button ion-button [navPush]="userPage" [navParams]="{username: 'Bob'}">User Bob</button>
+  <br>
+  <button ion-button navPop>Go back</button>
 </ion-content>
 
 <ion-footer padding>

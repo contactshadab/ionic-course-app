@@ -12,8 +12,8 @@ export class ShopPage{
 
     }
 
-    goToBuyout(){
-        this.navCtrl.push(BuyoutPage);
+    onBuy(product){
+        this.navCtrl.push(BuyoutPage, product);
     }
 
 }

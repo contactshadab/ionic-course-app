@@ -9,16 +9,20 @@ import { ShopPage } from '../shop/shop';
 })
 export class HomePage {
 
+  usersPage = UsersPage;
+
   constructor(public navCtrl: NavController) {
 
   }
 
-  goToUsers(){
-    this.navCtrl.push(UsersPage);
-  }
-
   goToShop(){
-    this.navCtrl.push(ShopPage);
+    this.navCtrl.push(ShopPage, {}, {
+      animate: true,
+      animation: 'md-transition',
+      direction: 'forward',
+      duration: 1000,
+      easing: 'ease-in'
+    });
   }
 
 }

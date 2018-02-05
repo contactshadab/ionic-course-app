@@ -30,7 +30,8 @@ import { BuyoutPage } from '../pages/buyout/buyout';
     HomePage,
     UsersPage,
     UserPage,
-    ShopPage
+    ShopPage,
+    BuyoutPage
   ],
   providers: [
     StatusBar,

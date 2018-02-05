@@ -4,5 +4,7 @@
     </ion-navbar>
 </ion-header>
 <ion-content padding>
-    <button ion-button (click)="goToBuyout()">Buyout</button>
+    <button ion-button (click)="onBuy({name: 'milk', quantity: 2})">Milk</button>
+    <button ion-button (click)="onBuy({name: 'bread', quantity: 5})">Bread</button>
+    <button ion-button (click)="onBuy({name: 'butter', quantity: 3})">Butter</button>
 </ion-content>
